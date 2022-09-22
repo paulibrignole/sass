@@ -1,6 +1,6 @@
 
 a {
-   .btn-social {
+    .btn-social {
     border-radius: 50%;
     color: #ffffff;
     display: inline-block;
@@ -26,62 +26,33 @@ a {
     text-decoration: none;
     width: 54px;
 
-    .fa {
-        backface-visibility: hidden;
-        transform: scale(1);
-        transition: all .25s;
-        transform: scale(1.3);
-    
-    }
-
-    i {
-        backface-visibility: hidden;
+    .fa, i {
         transform: scale(1);
         transition: all .25s;
         transform: scale(1.3);
     
     }
     
-    &:hover{
+    &:hover,&:focus{
         color: #fff;
         outline: none;
         text-decoration: none;
         transform: scale(1.3);
     }
 
-    &:focus{
-        color: #fff;
-        outline: none;
-        text-decoration: none;
-        transform: scale(1.3);
-    }
 
     .btn-xs{
-        font-size: 9px;
-        height: 24px;
-        line-height: 13px;
-        margin: 6px 2px;
-        width: 24px;
+        @include botones (9px, 24px, 13px, 6px 2px, 36px)
     }
     
     .btn-sm{
-        font-size: 13px;
-        height: 36px;
-        line-height: 18px;
-        margin: 6px 2px;
-        width: 36px;
+        @include botones (13px, 36px, 18px, 6px 2px, 36px)
     }
 
     .btn-lg{
-        font-size: 22px;
-        height: 72px;
-        line-height: 40px;
-        margin: 10px 6px;
-        width: 72px;
+        @include botones (35px, 82px, 59px, 18px 9px, 82px)
     }
-  
-
-   
+    
     .btn-facebok{
         background-color: $facebookBackground;
         &:hover{

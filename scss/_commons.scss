@@ -5,13 +5,37 @@ $mainFont: 'Source Sans Pro', sans-serif;
 $secondaryFont: 'Lato', sans-serif;
 
 
-
 $mainColor: pink;
+$navColor: rgb(230, 230, 230);
 $instagramHover: #ef7aa7;
 $instagramBackground: #EA4C89;
 $facebookBackground: #3b5998;
 $facebookHover: #4c70ba;
 
+
+$rosapastel: rgba(248, 179, 212, 0.601);
+$violeta: rgba(187, 164, 233, 0.704);
+$verde: rgba(165, 239, 225, 0.626);
+$lavanda: rgba(170, 195, 239, 0.553);
+
+
+$textLarge: 3.2em;
+$textMedium: 2.2em;
+$textSmall: 1.2em;
+$textXsmall: 1em;
+
+$paletacolores: (
+    'uno': pink, 
+    'dos': #eca7e943, 
+    'tres': #45c28e, 
+    'cuatro': #778cf2, 
+    'cinco': #eddaa0, 
+    'seis': #ce7ae3, 
+);
+
+.bg-back{
+    background-color: map-get($map: $paletacolores, $key: dos);
+}
 
 
 *{
@@ -26,9 +50,25 @@ $facebookHover: #4c70ba;
 #botonera img{
     width: 150px;
 }
+ul li {
+    list-style: none;
+}
+
 
 .bg-pink2{
     color: $mainColor;
     background-color: white
+}
+
+
+
+.parrafoFont {
+    font-size: $textSmall;
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
